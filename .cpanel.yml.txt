@@ -1,0 +1,5 @@
+---
+deployment
+  tasks
+    - export DEPLOYPATH=homeexamplepublic_html
+    - bincp -R images $DEPLOYPATH
