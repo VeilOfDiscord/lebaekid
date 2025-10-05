@@ -2,4 +2,4 @@
 deployment
   tasks
     - export DEPLOYPATH=/home/lebaekid1/public_html/
-    - bincp -R images $DEPLOYPATH
+    - /bin/cp -R images $DEPLOYPATH
