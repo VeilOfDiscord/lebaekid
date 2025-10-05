@@ -1,5 +1,5 @@
 ---
 deployment
   tasks
-    - export DEPLOYPATH=homeexamplepublic_html
+    - export DEPLOYPATH=/home/lebaekid1/public_html/
     - bincp -R images $DEPLOYPATH
