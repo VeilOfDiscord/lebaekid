@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Following tutorial -->
+<!-- https://www.youtube.com/watch?v=0YFrGy_mzjY -->
+<head>
+    <meta charset="UTF-8">
+    <title> Lebaek.ID - Home</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+    <div id="header-home">
+        <div class="container">
+            <nav>
+                <a href="/index.html"><img src="images/logo.png" class="logo"></a>
+                <ul>
+                    <li><a href="/events.html">Events</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+            </nav>
+            <div class="header_text">
+                <h1>LeBaek.id</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <!-- <h1 class="subtitle">Services</h1> -->
+            <div class="services-list">
+                <div>
+                    <h2>Events</h2>
+                    <p>Berani Nanjak and Ultra Races</p>
+                </div>
+                <div>
+                    <h2>Services</h2>
+                    <p>Tours, support package, etc.</p>
+                </div>
+                <div>
+                    <h2>Shop</h2>
+                    <p>Tokopedia</p>
+                </div>
+                <div>
+                    <h2>YouTube</h2>
+                    <p>Sesuka Ale</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <h1 class="subtitle">About</h1>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/logo.png">
+                </div>
+                <div class="about-col-2">
+                    <ul>
+                        <li>
+                            LeBaek.ID wants to give cycling enthusiasts the opportunity to enjoy 
+                            an exciting touring experience that is safe and comfortable while 
+                            exploring Indonesia with interesting and challenging routes.  
+                        </li>
+
+                        <li>
+                            Ale (Andre Leman) is a retired office worker with a hobby for 
+                            cycling long distances and competing in several national and 
+                            even international cycling events. He has also managed internal 
+                            club events as well as public events.
+                        </li>
+                        <li>
+                            To see more about Ale (Andre Leman), he also has a YouTube channel 
+                            called "Sesuka Ale" with videos covering many events and talking to 
+                            other competitors.
+                        </li>      
+                        <li>
+                            <i>
+                            LeBaek.ID ingin memberi kesempatan kepada sesama pecinta sepeda 
+                            menikmati pengalaman touring seru yang aman dan nyaman dalam 
+                            menjelajah Indonesia dengan rute-rute menarik 
+                            dan menantang.
+                            <br>
+
+                            </i>
+                            <li>
+                                <i>
+                                    Ale (Andre Leman), pensiunan karyawan swasta dengan hobi bersepeda jarak
+                                    jauh dan juga mengikuti beberapa event nasional maupun
+                                    international. Ia juga berpengalaman dalam
+                                    penyelenggaraan event internal club maupun event umum nasional.
+                                </i>
+                            </li>
+                            <li>
+                                <i>
+                                    Ale (Andre Leman) juga dikenal sebagai seorang Youtuber.
+                                    account Youtube ale : "sesuka ale"
+                                </i>
+                            </li>
+                        </li>    
+                    </ul>                  
+                            <!-- <ul>                      
+                                <li><span>YUCC 2021</span><br>1000km</li>
+                                <li><span>Bentang Jawa 2021</span><br>1500km</li>
+                                <li><span>Bentang Jawa 2023</span><br>1500km</li>
+                                <li><span>Bentang Jawa 2024</span><br>1500km</li>
+                                <li><span>London-Edinburgh-London 2022</span><br>1500km</li>
+                                <li><span>Lintang Flores2024</span><br> 1000km</li>
+                            </ul> -->
+                    <!-- <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('company')">LEBAEK.ID</p>
+                        <p class="tab-links" onclick="openTab('founder')">ALE</p>
+                        <p class="tab-links" onclick="openTab('races')">ULTRA</p>
+                    </div>
+                    <div class="tab-content active-tab" id="company">
+                        <ul>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="founder">
+                        <ul>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="races">
+
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p> Description</p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>VR Game </h3>
+                        <p> Description</p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Some random  App</h3>
+                        <p> Description</p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div> -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+
+    function openTab(tabName){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+    }
+</script>
+
+</body>
+<footer>
+    <div id="footer">
+        <div class="container">
+            <h1>LeBaek.id</h1>
+            <p></p>
+        </div>
+    </div>
+</footer>
+</html>

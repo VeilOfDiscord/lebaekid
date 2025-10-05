@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Veil's site</title>
+        <link rel="stylesheet" href="library.css"> 
+    </head>
+
+     <body>
+        <div id="header">
+            <div class="header-text">
+                <h2>Veil of Discord</h2>
+            </div>
+        </div>
+        <div id="main-screen">
+            <div class="container">
+                <div class="book-window" id="about">
+                    <div class="book-windowheader"><p onclick="closeTab('about')"></p></div>
+                    <p>About</p>
+                </div>
+                <div class="book-window" id="resume">
+                    <div class="book-windowheader"><p onclick="closeTab('resume')"></p></div>
+                    <p>Resume</p>
+                </div>
+                <div class="book-window" id="links">
+                    <div class="book-windowheader"><p onclick="closeTab('links')"></p></div>
+                    <p>links</p>
+                </div>
+                <div class="book-window" id="contact">
+                    <div class="book-windowheader"><p onclick="closeTab('contact')"></p></div>
+                    <p>contact</p>
+                </div>
+                <div class="book-window" id="work">
+                    <div class="book-windowheader"><p onclick="closeTab('work')"></p></div>
+                    <p>work</p>
+                </div>
+                <div class="row">
+                    <div class="screen-col-1"><p>Fun stuff</p></div>
+                    <div class="screen-col-2"><p onclick="openTab('about')">About</p></div>
+                    <div class="screen-col-3"><p>col3</p></div>
+                </div>
+                <div class="inventory-list">
+                    <nav>
+                        <ul>
+                            <li onclick="openTab('resume')"><a>Resume</a></li>
+                            <li onclick="openTab('links')"><a>Links</a></li>
+                            <li onclick="openTab('contact')"><a>Contact</a></li>
+                            <li onclick="openTab('work')"><a>Work</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <h9>2025 Nathaell Avril Leman</h9>
+        </div>
+    <script src="script.js"></script>
+     </body>
+</html>
+
+
+
