@@ -288,6 +288,7 @@ nav ul li a:hover::after{
 /* ---------------------Footer---------------------- */
 #footer{
     background: #080808;
+    color:aliceblue;
     display: block;
     padding: 70px;
 }
