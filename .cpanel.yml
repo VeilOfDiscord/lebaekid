@@ -4,8 +4,4 @@ deployment
     - export DEPLOYPATH=/home/lebaekid1/public_html/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
-    - /bin/cp events.html $DEPLOYPATH
-    - /bin/cp services.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
-    - /bin/cp -R images $DEPLOYPATH
     
