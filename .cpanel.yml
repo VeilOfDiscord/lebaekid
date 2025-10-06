@@ -3,9 +3,5 @@ deployment
   tasks
     - export DEPLOYPATH=/home/lebaekid1/public_html/
     - /bin/cp -R images $DEPLOYPATH
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
-    - /bin/cp events.html $DEPLOYPATH
-    - /bin/cp services.html $DEPLOYPATH
-    - /bin/cp contact.html $DEPLOYPATH
+
     
