@@ -6,9 +6,12 @@
 }
 body{
     background: #f5f5f5;
-    color: #fff;
+    color: #080808;
 }
 
+a{
+    text-decoration: none;
+}
 #header-home{
     width: 100%;
     height: 75vh;
@@ -47,7 +50,7 @@ nav ul li{
 
 nav ul li a{
     color: #2c2525;
-    text-decoration: none;
+    /* text-decoration: none; */
     font-size: 20px;
     position: relative;
 }
@@ -200,10 +203,6 @@ nav ul li a:hover::after{
     color: #f5f5f5;
 }
 
-.services-list a{
-    text-decoration: none;
-}
-
 .services-list p{
     color: #f5f5f5;
 }
@@ -241,7 +240,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), rgb(8, 31, 236));
+    background: linear-gradient(rgba(0,0,0,0.6), rgb(26, 35, 112));
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -274,10 +273,10 @@ nav ul li a:hover::after{
     text-decoration: none;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #202020;
+    border: 1px solid #080808;
     padding: 14px 50px;
     border-radius: 6px;
-    color: #202020;
+    color: #080808;
     transition: background 0.5s;
 }
 
@@ -295,7 +294,7 @@ nav ul li a:hover::after{
 /* ------------------------------------------------- */
 
 #ongoing-project{
-    color: #080808;
+    /* color: #080808; */
 }
 
 .banner{
@@ -311,15 +310,6 @@ nav ul li a:hover::after{
 
 .event-details{
     margin: 50px;
-    color: #080808;
-}
-
-.event-details h2{
-    color: #080808;
-}
-
-.event-details h3{
-    color: #080808;
 }
 
 .gallery{
