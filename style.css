@@ -9,9 +9,6 @@ body{
     color: #fff;
 }
 
-a{
-    text-decoration: none;
-}
 #header-home{
     width: 100%;
     height: 75vh;
@@ -177,7 +174,6 @@ nav ul li a:hover::after{
 /* ----------services------------- */
 
 #services{
-    /* padding:  0; */
     text-align: center;
 }
 
@@ -202,6 +198,10 @@ nav ul li a:hover::after{
     font-weight: 500;
     margin-bottom: 15px;
     color: #f5f5f5;
+}
+
+.services-list a{
+    text-decoration: none;
 }
 
 .services-list p{
@@ -299,8 +299,6 @@ nav ul li a:hover::after{
 
 .banner{
     display: flex;
-    /* background-color: aquamarine; */
-    /* align-items: center; */
     justify-content: center;
 }
 
@@ -312,4 +310,5 @@ nav ul li a:hover::after{
 
 .event-details{
     margin: 50px;
+    color: #080808;
 }
