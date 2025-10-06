@@ -292,7 +292,8 @@ nav ul li a:hover::after{
     display: block;
     padding: 70px;
 }
-/* ------------------ */
+/* ------------------------------------------------- */
+
 #ongoing-project{
     color: #080808;
 }
@@ -312,3 +313,17 @@ nav ul li a:hover::after{
     margin: 50px;
     color: #080808;
 }
+
+.event-details h2{
+    color: #080808;
+}
+
+.event-details h3{
+    color: #080808;
+}
+
+.gallery{
+    padding: 90px;
+    background: #6e6e6e;
+}
+
