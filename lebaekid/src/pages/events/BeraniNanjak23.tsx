@@ -2,10 +2,22 @@ import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import { generateLinks } from "../../util";
 import Gallery from "../../components/gallery/Gallery";
+import Card from "../../components/card/Card";
 
 const BeraniNanjak23 = () => {
   const galleryImages = generateLinks("2023/BN2023-", 6);
+  const pageLinks = [
+    "/events/berani-nanjak-24",
+    "/events",
+    "/events/berani-nanjak-25",
+  ];
+  const titles = ["Berani Nanjak 2024", "Back to Events", "Berani Nanjak 2025"];
 
+  const thumbnails = [
+    "../../assets/BN2024.jpg",
+    "../../assets/ame.png",
+    "../../assets/BN2025.jpg",
+  ];
   return (
     <>
       <Navbar />
@@ -38,6 +50,7 @@ const BeraniNanjak23 = () => {
               className="h-auto md:w-full w-full max-w-2xl sticky rounded-xl"
               autoPlay
               muted
+              loop
             >
               <source
                 src="https://lebaek.id/images/logo/BN2023-video.mp4"
@@ -47,6 +60,7 @@ const BeraniNanjak23 = () => {
           </div>
         </div>
       </div>
+      <Card pages={pageLinks} thumbnail={thumbnails} title={titles} />
       <Footer />
     </>
   );

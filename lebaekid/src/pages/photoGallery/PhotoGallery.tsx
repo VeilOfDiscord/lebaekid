@@ -69,7 +69,7 @@ const PhotoGallery: React.FC = () => {
       </h1>
       <div className="grid justify-center md:px-15 px-8">
         <ul
-          className="hidden text-sm font-medium text-center text-gray-500 rounded-lg shadow-sm sm:flex my-5"
+          className="text-sm font-medium text-center text-gray-500 rounded-lg shadow-sm flex my-5"
           id="default-tab"
           data-tabs-toggle="#default-tab-content"
           role="tablist"

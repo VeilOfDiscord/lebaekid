@@ -1,13 +1,28 @@
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
-import BN23Map from "../../assets/BN2023-map.png";
+import BN25Map from "../../assets/BN2023-map.jpg";
 import { generateLinks } from "../../util";
 import Gallery from "../../components/gallery/Gallery";
+import Card from "../../components/card/Card";
 
 const BeraniNanjak25 = () => {
   const galleryImages = generateLinks("2025/Supported/BN2025-", 6);
   // const galleryImages2 = generateLinks("2025/Supported/BN2025-", 3, 4);
-
+  const pageLinks = [
+    "/events/berani-nanjak-23",
+    "/events",
+    "/events/berani-nanjak-24",
+  ];
+  const titles = [
+    "Berani Nanjak 2023",
+    "Back to Events",
+    "Berani Nanjak 2024",
+  ];
+    const thumbnails = [
+    "../../assets/BN2023.jpg",
+    "../../assets/ame.png",
+    "../../assets/BN2024.jpg",
+  ];
   return (
     <>
       <Navbar />
@@ -38,25 +53,13 @@ const BeraniNanjak25 = () => {
           <div className="rder-1 md:order-2">
             <img
               className="h-auto md:w-full w-full max-w-2xl sticky rounded-xl"
-              src={BN23Map}
+              src={BN25Map}
               alt="Ame"
             />
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-3 justify-items-center">
-          {/* <figure className="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
-            <a href="#">
-              <img
-                className="rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-3.png"
-                alt="image description"
-              />
-            </a>
-            <figcaption className="absolute px-4 text-lg text-white bottom-6"></figcaption>
-          </figure>
- */}
-        </div>
       </div>
+      <Card pages={pageLinks} thumbnail={thumbnails} title={titles} />
       <Footer />
     </>
   );

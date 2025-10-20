@@ -25,6 +25,7 @@ const UBeraniNanjak25 = () => {
             <video
               autoPlay
               muted
+              loop
               className="h-auto md:w-full w-full max-w-2xl sticky rounded-xl"
             >
               <source
