@@ -4,6 +4,9 @@ import Footer from "../../components/footer/Footer";
 
 import BN2023Image from "../../assets/BN2023.jpg";
 import BN2024Image from "../../assets/BN2024.jpg";
+import BN2025Image from "../../assets/BN2025.jpg";
+import UBN2025Image from "../../assets/UBN2025.jpg";
+
 import UBN2026Image from "../../assets/UBN2026.jpg";
 
 const Events = () => {
@@ -63,7 +66,7 @@ const Events = () => {
                   <p className="text-xl font-bold pb-2">2025</p>
                   <Link to="/events/berani-nanjak-25" className="">
                     <img
-                      src={"https://lebaek.id/images/logo/Supported-2025.jpg"}
+                      src={BN2025Image}
                       className="hover:shadow-lg"
                       alt="Berani Nanjak 2025"
                     />
@@ -92,13 +95,21 @@ const Events = () => {
               cukup panjang sehingga peserta yang tidak berkompetisi bisa lebih
               menikmati perjalanan dengan tantangannya.
             </p>
+            <p className="text-xl py-4">
+              <a
+                href="https://lebaek.id/assets/BeraniNanjakTnC.pdf"
+                target="_blank"
+              >
+                Terms and Conditions apply.
+              </a>
+            </p>
             <div className="grid justify-center justify-items-center">
               <div className="grid justify-center grid-cols-2 gap-4 md:grid-cols-3 pb-10 w-75 md:w-auto">
                 <div className="grid justify-items-center">
                   <p className="text-xl font-bold pb-2">2025</p>
                   <Link to="/events/u-berani-nanjak-25">
                     <img
-                      src={"https://lebaek.id/images/logo/Unsupported-2025.png"}
+                      src={UBN2025Image}
                       className="hover:shadow-lg"
                       alt="Berani Nanjak 2025"
                     />
@@ -110,7 +121,7 @@ const Events = () => {
                     <img
                       src={UBN2026Image}
                       className="hover:shadow-lg"
-                      alt="Berani Nanjak 2025"
+                      alt="Berani Nanjak 2026"
                     />
                   </Link>
                 </div>

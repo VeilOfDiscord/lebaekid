@@ -43,24 +43,37 @@ const SesukaAle = () => {
             allowFullScreen
           ></iframe>
         </div>
-
-        <div className="grid grid-cols-2 md:grid-cols-2 justify-items-center justify-self-center gap-5 p-7">
-          {playlists.map((playlist) => (
-            <button
-              key={playlist.id}
-              onClick={() =>
-                setVideoSrc(
-                  `https://www.youtube.com/embed?listType=playlist&list=${playlist.id}`
-                )
-              }
-              className="w-30 md:w-60 text-lg text-white bg-gray-600 hover:bg-gray-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5"
-            >
-              <div>
-                <h2>{playlist.title}</h2>
-                <p>{playlist.description}</p>
-              </div>
-            </button>
-          ))}
+        <div className="grid justify-center justify-items-center">
+          <button
+            onClick={() =>
+              setVideoSrc(
+                "https://www.youtube.com/embed?listType=user_uploads&list=sesukaale"
+              )
+            }
+            className="w-30 md:w-60 text-lg text-white bg-gray-600 hover:bg-gray-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5"
+          >
+            <div>
+              <h2>Latest Video</h2>
+            </div>
+          </button>
+          <div className="grid grid-cols-2 md:grid-cols-2 justify-items-center justify-self-center gap-5 p-7">
+            {playlists.map((playlist) => (
+              <button
+                key={playlist.id}
+                onClick={() =>
+                  setVideoSrc(
+                    `https://www.youtube.com/embed?listType=playlist&list=${playlist.id}`
+                  )
+                }
+                className="w-30 md:w-60 text-lg text-white bg-gray-600 hover:bg-gray-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5"
+              >
+                <div>
+                  <h2>{playlist.title}</h2>
+                  <p>{playlist.description}</p>
+                </div>
+              </button>
+            ))}
+          </div>
         </div>
       </section>
       <Footer />

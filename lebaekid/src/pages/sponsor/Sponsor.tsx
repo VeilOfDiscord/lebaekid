@@ -30,7 +30,7 @@ const Sponsor = () => {
           </div>
         </div>
       </section>
-      <Gallery images={galleryImages} divCSS={"grid grid-cols-3 justify-items-center"} imgCSS={""} />
+      <Gallery images={galleryImages} divCSS={"grid grid-cols-3 justify-items-center"} imgCSS={" md:h-[400px] md:w-auto"} />
       <Footer />
     </>
   );

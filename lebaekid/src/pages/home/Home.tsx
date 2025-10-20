@@ -12,7 +12,6 @@ const Home = () => {
     "https://lebaek.id/images/home_gallery/BN2025-3.jpg",
     "https://lebaek.id/images/home_gallery/BN2025-4.jpg",
     "https://lebaek.id/images/home_gallery/BN2025-5.jpg",
-    "https://lebaek.id/images/home_gallery/BN2025-6.jpg",
     "https://lebaek.id/images/home_gallery/BN2025-7.jpg",
     "https://lebaek.id/images/home_gallery/BN2025-8.jpg",
     "https://lebaek.id/images/home_gallery/BN2025-9.jpg",

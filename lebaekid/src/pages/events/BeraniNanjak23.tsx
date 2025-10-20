@@ -1,6 +1,5 @@
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
-import BN23Map from "../../assets/BN2023-map.png";
 import { generateLinks } from "../../util";
 import Gallery from "../../components/gallery/Gallery";
 
@@ -14,7 +13,11 @@ const BeraniNanjak23 = () => {
         Berani Nanjak 2023
       </h1>
       <div className="grid justify-center pt-5 px-4">
-        <Gallery images={galleryImages} divCSS={"grid grid-cols-2 md:grid-cols-3"} imgCSS={"h-full w-full object-cover rounded-lg"} />
+        <Gallery
+          images={galleryImages}
+          divCSS={"grid grid-cols-2 md:grid-cols-3 "}
+          imgCSS={"h-full w-full object-cover rounded-lg"}
+        />
         <div className="grid justify-start grid-cols-1 md:grid-cols-2 py-8 gap-3 md:gap-0">
           <div className="order-2 md:order-1 text-lg">
             <p> Menempuh jarak 180km dengan elevasi 3800meg</p>
@@ -31,24 +34,17 @@ const BeraniNanjak23 = () => {
             </ul>
           </div>
           <div className="order-1 md:order-2">
-            <img
+            <video
               className="h-auto md:w-full w-full max-w-2xl sticky rounded-xl"
-              src={BN23Map}
-              alt="Map"
-            />
-          </div>
-        </div>
-        <div className="grid grid-cols-3 gap-3 justify-items-center">
-          {/* <figure className="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
-            <a href="#">
-              <img
-                className="rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-3.png"
-                alt="image description"
+              autoPlay
+              muted
+            >
+              <source
+                src="https://lebaek.id/images/logo/BN2023-video.mp4"
+                type="video/mp4"
               />
-            </a>
-            <figcaption className="absolute px-4 text-lg text-white bottom-6"></figcaption>
-          </figure> */}
+            </video>
+          </div>
         </div>
       </div>
       <Footer />

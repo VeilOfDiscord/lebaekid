@@ -11,12 +11,12 @@ interface Tab {
 }
 
 const PhotoGallery: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<string>("2024");
+  const [activeTab, setActiveTab] = useState<string>("2023");
 
   const Images23 = generateLinks("2023/BN2023-", 30);
   const Images24 = generateLinks("2024/BN2024-", 30);
-  const Images25 = generateLinks("2025/Supported/BN2025-", 10);
-  const ImagesU25 = generateLinks("2025/Unsupported/BN2025-", 10);
+  const Images25 = generateLinks("2025/Supported/BN2025-", 30);
+  const ImagesU25 = generateLinks("2025/Unsupported/UBN2025-", 30);
 
   const tabs: Tab[] = [
     {
@@ -111,7 +111,7 @@ const PhotoGallery: React.FC = () => {
               }`}
               onClick={() => setActiveTab("U2025")}
             >
-              2025
+              U2025
             </button>
           </li>
         </ul>
