@@ -6,17 +6,17 @@ const About = () => {
   return (
     <>
       <Navbar />
-      <div className="grid justify-center md:px-40 px-8">
+      <div className="grid justify-center md:px-15 px-8">
         <h1 className="grid justify-center text-6xl md:py-6 py-4 font-bold">About</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-1 m-1">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="flexbox align-center justify-items-center">
             <img
               src={logo}
-              className="sm:w-fit sm:h-fit w-[500px] h-fit md:p-20 object-contain align-center"
+              className="w-[500px] h-fit md:p-15 object-contain align-center"
               alt="LeBaek Logo"
             />
           </div>
-          <div className="text-xl text-justify md:m-7">
+          <div className="text-xl text-justify md:m-4">
             <ul className="py-3">
               <li>
                 LeBaek.ID wants to give cycling enthusiasts the opportunity to
@@ -36,14 +36,13 @@ const About = () => {
                 channel called "Sesuka Ale" with videos covering many events and
                 talking to other competitors.
               </li>
-              <hr className="py-3 border-gray-200" />
+              <hr className="my-5 border-gray-200" />
               <li>
                 <i>
                   LeBaek.ID ingin memberi kesempatan kepada sesama pecinta
                   sepeda menikmati pengalaman touring seru yang aman dan nyaman
                   dalam menjelajah Indonesia dengan rute-rute menarik dan
                   menantang.
-                  <br />
                 </i>
               </li>
 

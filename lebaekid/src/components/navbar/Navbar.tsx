@@ -7,11 +7,11 @@ const Navbar = () => {
 
   const navLinks = [
     { href: "/events", text: "Events" },
-    { href: "/shop", text: "Shop" },
+    // { href: "/shop", text: "Shop" },
     { href: "/SesukaAle", text: "Sesuka Ale" },
     { href: "/about", text: "About" },
     { href: "/sponsor", text: "Sponsor" },
-    { href: "/donation", text: "Donation" },
+    { href: "/photo-gallery", text: "Gallery" },
   ];
 
   return (
@@ -68,6 +68,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+      <hr className="border-gray-200 sm:mx-auto" />
     </nav>
   );
 };

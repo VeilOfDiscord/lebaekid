@@ -1,2 +1,0 @@
-# lebaekid
-React + Tailwind Website

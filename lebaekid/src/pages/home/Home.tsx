@@ -1,44 +1,40 @@
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
-import Gallery from "../../components/gallery/Gallery";
+import MasonryGallery from "../../components/gallery/MasonryGallery";
 
 import BannerImage from "../../assets/Banner.jpg";
-import BackgroundImage from "../../assets/background.jpg";
+import BackgroundImage from "../../assets/Banner Home.jpg";
 
 const Home = () => {
-  // In a real React app, you would use a library like 'react-helmet' or Next.js's <Head>
-  // to manage the document head. For this conversion, we'll focus on the body.
-  // You would also typically import CSS files directly.
   const galleryImages = [
-    "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
-    "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
-    "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
-    "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
-    "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
-    "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
-    "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg",
-    "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg",
-    "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg",
-    "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg",
-    "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg",
-    "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg",
+    "https://lebaek.id/images/home_gallery/BN2025-1.jpg",
+    "https://lebaek.id/images/home_gallery/BN2025-2.jpg",
+    "https://lebaek.id/images/home_gallery/BN2025-3.jpg",
+    "https://lebaek.id/images/home_gallery/BN2025-4.jpg",
+    "https://lebaek.id/images/home_gallery/BN2025-5.jpg",
+    "https://lebaek.id/images/home_gallery/BN2025-6.jpg",
+    "https://lebaek.id/images/home_gallery/BN2025-7.jpg",
+    "https://lebaek.id/images/home_gallery/BN2025-8.jpg",
+    "https://lebaek.id/images/home_gallery/BN2025-9.jpg",
+    "https://lebaek.id/images/home_gallery/BN2025-10.jpg",
   ];
-
   return (
     <>
       <Navbar />
 
-      <section className="relative flex h-50 w- items-center justify-center bg-gray-900">
+      <section className="relative flex h-[20vh] md:h-[50vh] w-full items-end justify-center bg-gray-900">
         <div
           style={{ backgroundImage: `url(${BackgroundImage})` }}
-          className="absolute inset-0 z-0 h-full bg-cover bg-center opacity-30"
+          className="absolute inset-0 z-0 h-auto bg-cover bg-[] opacity-80"
         ></div>
-        <div className="relative z-10 p-8 text-center text-white"></div>
+        <div className="relative z-10 p-5 text-white text-5xl font-bold">
+          LeBaek.id
+        </div>
       </section>
 
-      <section className="m-auto w-full max-w-screen-xl p-4 py-8 lg:py-16">
+      <section className="m-auto w-full max-w-screen-xl p-4">
         <div className="grid justify-items-center">
-          <h1 className="grid justify-center text-center text-4xl md:text-6xl md:py-6 pb-6 font-bold">
+          <h1 className="text-center text-4xl md:text-6xl md:py-6 pb-6 font-bold">
             Upcoming Event
           </h1>
           <img
@@ -50,7 +46,7 @@ const Home = () => {
         <div>
           <div className="text-center py-5">
             <h2 className="font-bold text-3xl md:text-5xl py-5">
-              BERANI NANJAK - Unsupported Ultra cycling Race
+              BERANI NANJAK - Unsupported Ultra Cycling Race
             </h2>
             <div className="md:text-3xl text-xl">
               <h3>23-25 January 2026 Bandung</h3>
@@ -117,8 +113,14 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section>
+        <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
 
-      <Gallery images={galleryImages} />
+        <h1 className="text-center text-4xl md:text-6xl md:py-6 pb-6 font-bold">
+          Photos from Last Event
+        </h1>
+        <MasonryGallery images={galleryImages} divCSS="columns-2 lg:columns-3" imgCSS={"rounded-lg"} />
+      </section>
 
       <Footer />
     </>

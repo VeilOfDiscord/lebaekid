@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <Link to="/" className="flex items-center">
-              <img src={logo} className="h-20 me-3" alt="LeBaek Logo" />
+              <img src={logo} className="h-20" alt="LeBaek Logo" />
             </Link>
             <p className="mt-4">
               <span>LeBaek.id</span> adalah penyelangga resmi event sepeda ultra
