@@ -30,28 +30,30 @@ const CalendarList = () => {
     fetchEvents();
   }, []);
   const confirmedEvents = events.filter((event) => event.status == true);
-  return (
-    <div className="-my-4 divide-y divide-gray-200 dark:divide-gray-700">
-      {/* Events */}
-      {confirmedEvents.map((event) => (
-        <div
-          key={event.id}
-          className="grid grid-cols-3 gap-20 py-4 sm:gap-2 sm:flex-row sm:items-left text-start"
-        >
-          <p className="w-32 text-xl font-normal text-gray-500 sm:text-right shrink-0">
-            <DateFormatter dateString={event.date} />
-          </p>
-          <h3 className="text-xl sm:text-sm md:text-lg text-gray-900 col-span-2">
-            <a href={event.link} className="font-semibold hover:underline">
-              {event.name}
-            </a>
-            <p>
-              {event.distance}km {event.location}
+return (
+    <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+        {/* Events */}
+        {confirmedEvents.map((event) => (
+          <div
+            key={event.id}
+            className="py-6 sm:py-8 grid grid-cols-1 sm:grid-cols-[180px_1fr] gap-4 sm:gap-8"
+          >
+            <p className="text-lg sm:text-xl font-normal text-gray-500 sm:text-right">
+              <DateFormatter dateString={event.date} />
             </p>
-            <p>{event.bike_type}</p>
-          </h3>
-        </div>
-      ))}
+            <div className="text-base sm:text-lg text-gray-900">
+              <a href={event.link} className="font-semibold hover:underline block mb-2">
+                {event.name}
+              </a>
+              <p className="text-gray-900">
+                {event.distance}km · {event.location}
+              </p>
+              <p className="text-gray-900">{event.bike_type}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

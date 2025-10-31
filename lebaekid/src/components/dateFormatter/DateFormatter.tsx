@@ -6,7 +6,7 @@ function DateFormatter({ dateString }: { dateString: string }) {
   });
   const formattedMonth = date.toLocaleDateString("en-US", {
     month: "long",
-    year: "2-digit"
+    year: "numeric"
   });
 
   return (

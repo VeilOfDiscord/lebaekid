@@ -2,10 +2,10 @@ import { useState } from "react";
 import axios from "axios";
 
 const RegisterForm = () => {
-const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState({
     name: "",
     location: "",
-    bike_type: "Road Bike", 
+    bike_type: "Road Bike",
     date: "",
     link: "",
     distance: "",
@@ -34,7 +34,7 @@ const [formData, setFormData] = useState({
   };
 
   return (
-    <section>
+    <section className="md:h-[600px] lg:h-[650px]">
       <h1 className="text-xl font-bold">Add an event</h1>
       <form onSubmit={handleSubmit} className="grid p-2 justify-center">
         <input
@@ -54,15 +54,15 @@ const [formData, setFormData] = useState({
           onChange={handleChange}
         />
         <label className="bg-white p-2">
-          Bike Type for Event: 
+          Bike Type for Event:
           <select
-            name="bike_type" 
-            value={formData.bike_type} 
+            name="bike_type"
+            value={formData.bike_type}
             onChange={handleChange}
           >
             <option value="Road Bike">Road Bike</option>
             <option value="MtB">MtB</option>
-            <option value="Gravel">Gravel</option> {/* <-- Fixed this value */}
+            <option value="Gravel">Gravel</option>
             <option value="Folding">Folding</option>
             <option value="Any">Any</option>
           </select>

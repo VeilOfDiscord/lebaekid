@@ -4,7 +4,7 @@ header("Content-Type: application/json");
 
 include 'config.php';
 
-$sql = "SELECT * FROM calendarEvents";
+$sql = "SELECT * FROM calendarEvents ORDER BY date ASC";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
