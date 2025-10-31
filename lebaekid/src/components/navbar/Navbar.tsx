@@ -12,16 +12,18 @@ const Navbar = () => {
     { href: "/about", text: "About" },
     { href: "/sponsor", text: "Sponsor" },
     { href: "/photo-gallery", text: "Gallery" },
+    { href: "/calendar", text: "Calendar" },
+    { href:"https://lebaek.id/assets/BeraniNanjakTnC.pdf", text: "Terms & Conditions", }
   ];
 
   return (
-    <nav className="bg-white border-gray-200">
+    <nav className="bg-white border-gray-200 z-3">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <img src={logo} className="h-20" alt="LeBaek Logo" />
+          <img src={logo} className="md:h-17 h-20" alt="LeBaek Logo" />
         </Link>
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}

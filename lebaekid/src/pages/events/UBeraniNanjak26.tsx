@@ -11,7 +11,7 @@ const UBeraniNanjak26 = () => {
       <h1 className="grid justify-center text-center md:text-6xl text-5xl p-6 font-bold">
         Berani Nanjak 2026
       </h1>
-      <div className="grid justify-center pt-5 px-4">
+      <div className="grid justify-center pt-5 px-10 md:px-30 md:mx-50">
         {/* <Gallery images={galleryImages} divCSS={"grid grid-cols-2 md:grid-cols-3"} imgCSS={"h-full w-full object-cover rounded-lg"} /> */}
                   <img
             src={BannerImage}

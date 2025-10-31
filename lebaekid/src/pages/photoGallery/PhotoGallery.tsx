@@ -3,6 +3,7 @@ import Footer from "../../components/footer/Footer";
 import React, { useState } from "react";
 import MasonryGallery from "../../components/gallery/MasonryGallery";
 import { generateLinks } from "../../util";
+import BackgroundPattern from "../../assets/web_bg.jpg";
 
 interface Tab {
   id: string;
@@ -64,6 +65,8 @@ const PhotoGallery: React.FC = () => {
   return (
     <>
       <Navbar />
+            <section style={{backgroundImage: `url(${BackgroundPattern})`}}>
+
       <h1 className="grid justify-center text-6xl md:py-6 py-4 font-bold">
         Photo Gallery
       </h1>
@@ -120,6 +123,7 @@ const PhotoGallery: React.FC = () => {
       <div className="grid justify-center p-8">
         {tabs.find((tab) => tab.id === activeTab)?.content}
       </div>
+      </section>
       <Footer />
     </>
   );

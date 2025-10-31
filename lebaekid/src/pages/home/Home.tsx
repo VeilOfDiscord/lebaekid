@@ -4,6 +4,7 @@ import MasonryGallery from "../../components/gallery/MasonryGallery";
 
 import BannerImage from "../../assets/Banner.jpg";
 import BackgroundImage from "../../assets/Banner Home.jpg";
+import BackgroundPattern from "../../assets/web_bg.jpg";
 
 const Home = () => {
   const galleryImages = [
@@ -21,17 +22,17 @@ const Home = () => {
     <>
       <Navbar />
 
-      <section className="relative flex h-[20vh] md:h-[50vh] w-full items-end justify-center bg-gray-900">
+      <section className="relative flex h-[20vh] md:h-[50vh] w-full items-end justify-center bg-gray-900 ">
         <div
           style={{ backgroundImage: `url(${BackgroundImage})` }}
-          className="absolute inset-0 z-0 h-auto bg-cover bg-[] opacity-80"
+          className="absolute inset-0 h-auto bg-cover opacity-80"
         ></div>
-        <div className="relative z-10 p-5 text-white text-5xl font-bold">
+        <div className="relative z-1 p-5 text-white text-5xl font-bold">
           LeBaek.id
         </div>
       </section>
 
-      <section className="m-auto w-full max-w-screen-xl p-4">
+      <section className="m-auto w-full max-w-screen-xl p-4" >
         <div className="grid justify-items-center">
           <h1 className="text-center text-4xl md:text-6xl md:py-6 pb-6 font-bold">
             Upcoming Event
@@ -92,33 +93,39 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="text-center py-3">
-            <h2 className="font-bold md:text-4xl text-2xl">
-              Periode Registrasi
-            </h2>
-            <div className="md:text-2xl text-lg">
-              <p>Early Bird 1 Oct - 31 Oct 2025</p>
-              <p>Normal 1 Nov - 31 Dec 2025</p>
-              <p className="pb-5">
-                PM harga khusus Komunitas (selama slot masih ada)
-              </p>
+          <div className="flex justify-center">
+            <div className="text-center m-5 p-6 bg-gray-200 rounded-2xl w-80 md:w-200">
+              <h2 className="font-bold md:text-4xl text-2xl">
+                Periode Registrasi
+              </h2>
+              <div className="md:text-2xl text-lg">
+                <p>Early Bird 1 Oct - 31 Oct 2025</p>
+                <p>Normal 1 Nov - 31 Dec 2025</p>
+                <p className="pb-5">
+                  PM harga khusus Komunitas (selama slot masih ada)
+                </p>
+              </div>
+              <a
+                href="https://bit.ly/BeraniNanjak-Unsupported"
+                className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xl px-5 py-2.5"
+              >
+                Register Here!
+              </a>
             </div>
-            <a
-              href="https://bit.ly/BeraniNanjak-Unsupported"
-              className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xl px-5 py-2.5"
-            >
-              Register Here!
-            </a>
           </div>
         </div>
       </section>
-      <section>
+      <section style={{backgroundImage: `url(${BackgroundPattern})`}}>
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
 
-        <h1 className="text-center text-4xl md:text-6xl md:py-6 pb-6 font-bold">
+        <h1 className="text-center text-4xl md:text-6xl md:py-6 pb-6 font-bold" >
           Photos from Last Event
         </h1>
-        <MasonryGallery images={galleryImages} divCSS="columns-2 lg:columns-3" imgCSS={"rounded-lg"} />
+        <MasonryGallery
+          images={galleryImages}
+          divCSS="columns-2 lg:columns-3"
+          imgCSS={"rounded-lg"}
+        />
       </section>
 
       <Footer />

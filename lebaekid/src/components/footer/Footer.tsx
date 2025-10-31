@@ -3,22 +3,21 @@ import logo from "../../assets/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-white">
-      <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+    <footer className="bg-gray-800 md:h-[30vh]">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <Link to="/" className="flex items-center">
-              <img src={logo} className="h-20" alt="LeBaek Logo" />
+              <img src={logo} className="h-20 invert" alt="LeBaek Logo" />
             </Link>
-            <p className="mt-4">
+            <p className="mt-4 text-white font-bold">
               <span>LeBaek.id</span> adalah penyelangga resmi event sepeda ultra
               cycling endurance Berani Nanjak.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase">
                 Contact
               </h2>
               <ul className="text-gray-500 font-medium">
@@ -45,7 +44,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase">
                 Follow Us
               </h2>
               <ul className="text-gray-500 font-medium">

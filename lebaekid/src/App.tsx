@@ -14,6 +14,7 @@ import UBeraniNanjak26 from "./pages/events/UBeraniNanjak26";
 import PhotoGallery from "./pages/photoGallery/PhotoGallery";
 import Sponsor from "./pages/sponsor/Sponsor";
 import Shop from "./pages/shop/Shop";
+import Calendar from "./pages/calendar/Calendar";
 
 function App() {
   
@@ -31,6 +32,7 @@ function App() {
         <Route path="/events/u-berani-nanjak-26" element={<UBeraniNanjak26 />} />
         <Route path="/photo-gallery" element={<PhotoGallery />} />
         <Route path="/sponsor" element={<Sponsor/>}/>
+        <Route path="/calendar" element={<Calendar />} />
         <Route path="/shop" element={<Shop/>}/>
       </Routes>
     </BrowserRouter>
