@@ -32,7 +32,7 @@ const CalendarList = () => {
   const confirmedEvents = events.filter((event) => event.status == true);
 return (
     <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+      <div className="divide-y divide-gray-700">
         {/* Events */}
         {confirmedEvents.map((event) => (
           <div
@@ -43,7 +43,7 @@ return (
               <DateFormatter dateString={event.date} />
             </p>
             <div className="text-base sm:text-lg text-gray-900">
-              <a href={event.link} className="font-semibold hover:underline block mb-2">
+              <a href={event.link} target="_blank" className="font-semibold hover:underline block mb-2">
                 {event.name}
               </a>
               <p className="text-gray-900">
