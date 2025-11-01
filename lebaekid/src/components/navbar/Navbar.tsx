@@ -13,7 +13,11 @@ const Navbar = () => {
     { href: "/sponsor", text: "Sponsor" },
     { href: "/photo-gallery", text: "Gallery" },
     { href: "/calendar", text: "Calendar" },
-    { href:"https://lebaek.id/assets/BeraniNanjakTnC.pdf", text: "Terms & Conditions", }
+    {
+      href: "https://lebaek.id/assets/BeraniNanjakTnC.pdf",
+      text: "Terms & Conditions",
+      newTab: true,
+    },
   ];
 
   return (
@@ -57,16 +61,29 @@ const Navbar = () => {
           id="navbar-default"
         >
           <ul className="text-xl font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <Link
-                  to={link.href}
-                  className="block py-2 px-4 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                >
-                  {link.text}
-                </Link>
-              </li>
-            ))}
+            {navLinks.map((link) =>
+              link.newTab ? (
+                <li key={link.href}>
+                  <Link
+                    to={link.href}
+                    target="_blank"
+                    className="block py-2 px-4 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                    rel="noopener noreferrer"
+                  >
+                    {link.text}
+                  </Link>
+                </li>
+              ) : (
+                <li key={link.href}>
+                  <Link
+                    to={link.href}
+                    className="block py-2 px-4 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                  >
+                    {link.text}
+                  </Link>
+                </li>
+              )
+            )}
           </ul>
         </div>
       </div>

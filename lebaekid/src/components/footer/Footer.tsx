@@ -11,8 +11,8 @@ const Footer = () => {
               <img src={logo} className="h-20 invert" alt="LeBaek Logo" />
             </Link>
             <p className="mt-4 text-white font-bold">
-              <span>LeBaek.id</span> adalah penyelangga resmi event sepeda ultra
-              cycling endurance Berani Nanjak.
+              <span>LeBaek.id</span> adalah penyelanggara resmi event sepeda
+              ultra cycling Berani Nanjak.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -73,6 +73,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <p className="text-center text-gray-600">Created by Nathaell Avril Leman</p>
     </footer>
   );
 };
