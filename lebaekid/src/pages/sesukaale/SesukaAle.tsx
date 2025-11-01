@@ -4,33 +4,31 @@ import Footer from "../../components/footer/Footer";
 import BackgroundPattern from "../../assets/web_bg.jpg";
 const SesukaAle = () => {
   const [videoSrc, setVideoSrc] = useState(
-    "https://www.youtube.com/embed?listType=user_uploads&list=sesukaale"
+    "https://www.youtube.com/embed?listType=playlist&list=UUwgTbpqA7G294O8dQifvvqA&index=2"
   );
 
   const playlists = [
     {
       id: "PL05yvb5-0qTh-rmjmXn7i5PKTvCkOBuzS",
-      thumbnail:"https://lebaek.id/images/video_page/thumbnail_rollingstories.jpg",
-      name:"The Rolling Stories"
+      thumbnail:
+        "https://lebaek.id/images/video_page/thumbnail_rollingstories.jpg",
+      name: "The Rolling Stories",
     },
     {
       id: "PL05yvb5-0qThgRVq57fwHtzTlIZoe-RF5",
       thumbnail: "https://lebaek.id/images/video_page/thumbnail_BN.jpg",
-            name:"Berani Nanjak"
-
+      name: "Berani Nanjak",
     },
     {
       id: "PL05yvb5-0qTi2ZpBVP40PGQ1VjvmxgpZL",
       thumbnail:
         "https://lebaek.id/images/video_page/thumbnail_travelstories.jpg",
-              name:"Travelling Story"
-
+      name: "Travelling Story",
     },
     {
       id: "PL05yvb5-0qTjq5Pq626AuBfxbQIUYtjd-",
       thumbnail: "https://lebaek.id/images/video_page/thumbnail_TrickTips.jpg",
-            name:"Trick Tips!"
-
+      name: "Trick Tips!",
     },
   ];
 
@@ -51,7 +49,7 @@ const SesukaAle = () => {
           <button
             onClick={() =>
               setVideoSrc(
-                "https://www.youtube.com/embed?listType=user_uploads&list=sesukaale"
+                "https://www.youtube.com/embed?listType=playlist&list=UUwgTbpqA7G294O8dQifvvqA&index=2"
               )
             }
             className="w-30 md:w-60 text-lg text-white bg-gray-600 hover:bg-gray-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5"
