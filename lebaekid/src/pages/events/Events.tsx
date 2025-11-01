@@ -8,11 +8,11 @@ const Events = () => {
     <>
       <Navbar />
       <section className="p-4"  style={{ backgroundImage: `url(${BackgroundPattern})` }}>
-        <div className="grid justify-center lg:px-40 px-8">
+        <div className="grid justify-center lg:px-40 px-8 ">
           <h1 className="grid justify-center text-6xl py-6 font-bold">
             Events
           </h1>
-          <div className="grid justify-center bg-white rounded-sm p-4">
+          <div className="grid justify-center bg-white rounded-xl md:px-10 px-6 pt-6">
             <div className="grid">
               <h1 className="text-5xl pb-1">Berani Nanjak</h1>
               <h1 className="text-3xl md:text-4xl pb-3">
@@ -81,7 +81,7 @@ const Events = () => {
               </div>
             </div>
           </div>
-          <div className="grid justify-center bg-white rounded-sm p-4">
+          <div className="grid justify-center bg-white rounded-xl md:px-10 px-6">
             <h1 className="text-5xl pb-1">Berani Nanjak</h1>
             <h1 className="text-3xl md:text-4xl pb-3">
               Unsupported Ultra Cycling Race
@@ -119,10 +119,11 @@ const Events = () => {
               nutrisi, dan kemampuan bertahan menghadapi naik-turun emosi di
               sepanjang perjalanan.
             </p>
-            <p className="text-2xl md:text-3xl py-4 text-center">
+            <p className="text-2xl md:text-3xl py-4 mb-6 text-center">
               <a
                 href="https://lebaek.id/assets/BeraniNanjakTnC.pdf"
                 target="_blank"
+                className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-2xl md:text-3xl  px-5 py-2.5"
               >
                 Terms and Conditions apply.
               </a>
