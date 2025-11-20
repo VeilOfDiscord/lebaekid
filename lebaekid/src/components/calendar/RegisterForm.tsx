@@ -80,7 +80,7 @@ const RegisterForm = () => {
           className="bg-white p-2"
           type="text"
           name="link"
-          placeholder="External Link"
+          placeholder="Link (Facebook, Instagram, Website, dll)"
           value={formData.link}
           onChange={handleChange}
         />

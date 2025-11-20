@@ -30,20 +30,28 @@ const CalendarList = () => {
     fetchEvents();
   }, []);
   const confirmedEvents = events.filter((event) => event.status == true);
-return (
+  return (
     <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* <h1 className="bg-white ">Search Bar... (WIP)</h1> */}
       <div className="divide-y divide-gray-700">
         {/* Events */}
         {confirmedEvents.map((event) => (
           <div
             key={event.id}
+            id={`${event.id}`}
             className="py-6 sm:py-8 grid grid-cols-1 sm:grid-cols-[180px_1fr] gap-4 sm:gap-8"
           >
-            <p className="text-lg sm:text-xl font-normal text-gray-500 sm:text-right">
-              <DateFormatter dateString={event.date} />
-            </p>
+            <a href={`/calendar/#${event.id}`}>
+              <p className="text-lg sm:text-xl font-normal text-gray-500 sm:text-right">
+                <DateFormatter dateString={event.date} />
+              </p>
+            </a>
             <div className="text-base sm:text-lg text-gray-900">
-              <a href={event.link} target="_blank" className="font-semibold hover:underline block mb-2">
+              <a
+                href={event.link}
+                target="_blank"
+                className="font-semibold hover:underline block mb-2"
+              >
                 {event.name}
               </a>
               <p className="text-gray-900">

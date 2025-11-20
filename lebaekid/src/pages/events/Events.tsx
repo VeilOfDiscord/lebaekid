@@ -123,7 +123,7 @@ const Events = () => {
               <a
                 href="https://lebaek.id/assets/BeraniNanjakTnC.pdf"
                 target="_blank"
-                className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-2xl md:text-3xl  px-5 py-2.5"
+                className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xl md:text-3xl  px-5 py-2.5"
               >
                 Terms and Conditions apply.
               </a>

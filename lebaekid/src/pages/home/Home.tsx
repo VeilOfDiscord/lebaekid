@@ -5,19 +5,11 @@ import MasonryGallery from "../../components/gallery/MasonryGallery";
 import BannerImage from "../../assets/Banner.jpg";
 import BackgroundImage from "../../assets/Banner Home.jpg";
 import BackgroundPattern from "../../assets/web_bg.jpg";
+import { generateLinks } from "../../util";
 
 const Home = () => {
-  const galleryImages = [
-    "https://lebaek.id/images/home_gallery/BN2025-1.jpg",
-    "https://lebaek.id/images/home_gallery/BN2025-2.jpg",
-    "https://lebaek.id/images/home_gallery/BN2025-3.jpg",
-    "https://lebaek.id/images/home_gallery/BN2025-4.jpg",
-    "https://lebaek.id/images/home_gallery/BN2025-5.jpg",
-    "https://lebaek.id/images/home_gallery/BN2025-7.jpg",
-    "https://lebaek.id/images/home_gallery/BN2025-8.jpg",
-    "https://lebaek.id/images/home_gallery/BN2025-9.jpg",
-    "https://lebaek.id/images/home_gallery/BN2025-10.jpg",
-  ];
+  const galleryImages = generateLinks("/home_gallery/BN2025-",10);
+  
   return (
     <>
       <Navbar />
