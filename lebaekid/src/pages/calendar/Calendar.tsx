@@ -3,12 +3,14 @@ import RegisterForm from "../../components/calendar/RegisterForm";
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
 import BackgroundPattern from "../../assets/web_bg.jpg";
-
+import Helmet from "react-helmet";
 
 const Calendar = () => {
   return (
     <>
-
+      <Helmet>
+        <title>Cycling Event Calendar - LeBaek.id</title>
+      </Helmet>
       <Navbar />
       <section
         className="md:p-1 p-5"
@@ -29,8 +31,7 @@ const Calendar = () => {
             <h2 className="pt-6 text-4xl font-extrabold leading-tight tracking-tight text-gray-900">
               Events
             </h2>
-            <div className="flow-root max-w-3xl mx-auto mt-8 sm:mt-12 lg:mt-16">
-              {/* <h1 className="bg-amber-200">Search</h1> */}
+            <div className="flow-root max-w-3xl mx-auto mt-2 sm:mt-4 lg:mt-6">
               <CalendarList />
             </div>
           </div>

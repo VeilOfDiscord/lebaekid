@@ -86,7 +86,9 @@ const RegisterForm = () => {
         />
         <input
           className="bg-white p-2"
-          type="number"
+          type="text"
+          inputMode="numeric"
+          pattern="[0-9!*()_+\-=\[\]{};':\\\|,.<>\/?~`]+"
           name="distance"
           placeholder="Total Distance"
           value={formData.distance}
