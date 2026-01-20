@@ -14,8 +14,10 @@ import UBeraniNanjak26 from "./pages/events/UBeraniNanjak26";
 import PhotoGallery from "./pages/photoGallery/PhotoGallery";
 import Sponsor from "./pages/sponsor/Sponsor";
 import Shop from "./pages/shop/Shop";
+import Test from "./pages/test/Test";
 import Calendar from "./pages/calendar/Calendar";
-
+import OngoingVote from "./pages/events/OngoingVote";
+import Wiki from "./pages/wiki/Wiki";
 function App() {
   
   return (
@@ -30,10 +32,13 @@ function App() {
         <Route path="/events/berani-nanjak-25" element={<BeraniNanjak25 />} />
         <Route path="/events/u-berani-nanjak-25" element={<UBeraniNanjak25 />} />
         <Route path="/events/u-berani-nanjak-26" element={<UBeraniNanjak26 />} />
+        <Route path="/events/u-berani-nanjak-26/ongoing-vote" element={<OngoingVote />} />
         <Route path="/photo-gallery" element={<PhotoGallery />} />
         <Route path="/sponsor" element={<Sponsor/>}/>
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/shop" element={<Shop/>}/>
+        <Route path="/test" element={<Test/>}/>
+        <Route path="/wiki" element={<Wiki/>}/>
       </Routes>
     </BrowserRouter>
   );

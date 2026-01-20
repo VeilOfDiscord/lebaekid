@@ -8,7 +8,7 @@ const Events = () => {
     <>
       <Navbar />
       <section className="p-4"  style={{ backgroundImage: `url(${BackgroundPattern})` }}>
-        <div className="grid justify-center lg:px-40 px-8 ">
+        <div className="grid justify-center lg:px-40 px-8">
           <h1 className="grid justify-center text-6xl py-6 font-bold">
             Events
           </h1>

@@ -7,7 +7,7 @@ const Navbar = () => {
 
   const navLinks = [
     { href: "/events", text: "Events" },
-    // { href: "/shop", text: "Shop" },
+    { href: "/wiki", text: "Petarung Berani Nanjak" },
     { href: "/SesukaAle", text: "Sesuka Ale" },
     { href: "/about", text: "About" },
     { href: "/sponsor", text: "Sponsor" },

@@ -1,15 +1,28 @@
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import MasonryGallery from "../../components/gallery/MasonryGallery";
-
-import BannerImage from "../../assets/Banner.jpg";
 import BackgroundImage from "../../assets/Banner Home.jpg";
 import BackgroundPattern from "../../assets/web_bg.jpg";
 import { generateLinks } from "../../util";
+import BannerCarousel from "../../components/carousel/BannerCarousel";
 
 const Home = () => {
-  const galleryImages = generateLinks("/home_gallery/BN2025-",10);
-  
+  const galleryImages = generateLinks("/home_gallery/BN2025-", 10);
+  const BannerTemp = generateLinks("voting/banner-", 2, 1, ".jpg");
+  const Banner = BannerTemp.concat(
+    generateLinks("voting/banner-", 5, 1, ".gif").concat(
+      generateLinks("voting/banner-", 7, 3, ".jpg"),
+    ),
+  );
+  const BannerLinks = [
+    "#",
+    "https://docs.google.com/forms/d/e/1FAIpQLSe4gc8kCoEg066jy5f-5UYt4ByBYzYaYV4PSpTE-TY_pc_rxA/viewform",
+    "https://www.biznetgio.com",
+    "https://www.instagram.com/cervelo_id?igsh=MXFwN2Z2MGlnOWJzdg==",
+    "https://www.instagram.com/stray.cc/",
+    "https://www.rodalink.com/id/",
+    "https://www.instagram.com/manta.liberta?igsh=MXVza2J2OG9rNWs2cA==",
+  ];
   return (
     <>
       <Navbar />
@@ -24,15 +37,18 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="m-auto w-full max-w-screen-xl p-4" >
+      <section className="m-auto w-full max-w-screen-xl p-4">
         <div className="grid justify-items-center">
           <h1 className="text-center text-4xl md:text-6xl md:py-6 pb-6 font-bold">
             Upcoming Event
           </h1>
-          <img
-            src={BannerImage}
-            className="justify-center md:w-full object-fit rounded-lg"
-            alt="Upcoming Event Banner"
+        </div>
+        <div className="grid justify-center sticky top-0 z-1">
+          <BannerCarousel
+            images={Banner}
+            autoslide={true}
+            autoslideInterval={3000}
+            link={BannerLinks}
           />
         </div>
         <div>
@@ -98,7 +114,7 @@ const Home = () => {
                 </p>
               </div>
               <a
-                href="https://bit.ly/BeraniNanjak-Unsupported"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc-d_Mms_0Nu9_sS7vMnIYKEdXEMhVIjNpXrnYkIsIPr4w3XQ/viewform?usp=header"
                 className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xl px-5 py-2.5"
               >
                 Register Here!
@@ -107,10 +123,10 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section style={{backgroundImage: `url(${BackgroundPattern})`}}>
+      <section style={{ backgroundImage: `url(${BackgroundPattern})` }}>
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
 
-        <h1 className="text-center text-4xl md:text-6xl md:py-6 pb-6 font-bold" >
+        <h1 className="text-center text-4xl md:text-6xl md:py-6 pb-6 font-bold">
           Photos from Last Event
         </h1>
         <MasonryGallery

@@ -26,7 +26,7 @@ const SesukaAle = () => {
       thumbnail:
         "https://lebaek.id/images/video_page/thumbnail_travelstories.jpg",
       name: "Travelling Story",
-      desc: "Melanglang mejelajah tanpa batas",
+      desc: "Melanglang menjelajah tanpa batas",
     },
     {
       id: "PL05yvb5-0qTjq5Pq626AuBfxbQIUYtjd-",

@@ -34,6 +34,7 @@ const CalendarList = () => {
           "https://lebaek.id/backend/fetch_users.php"
         );
         setEvents(response.data);
+        console.log("events data: ", response.data);
       } catch (error) {
         console.error("Error fetching users:", error);
       }
