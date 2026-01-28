@@ -119,10 +119,10 @@ const UBeraniNanjak26 = () => {
       {/* YouTube */}
       <div className="lg:grid grid-cols-1 xl:grid-cols-2 gap-10">
         {/* iframe */}
-        <div className="grid justify-center md:px-40 px-8 mx-100">
+        <div className="grid justify-center md:px-40 px-8 lg:mx-100">
           <iframe
             className="aspect-video lg:w-[960px] lg:h-[540px] md:w-[660px] md:h-[440px] w-screen h-fit rounded-lg p-6 justify-center"
-            src={"https://www.youtube.com/embed/i2mLcv6tmXQ"}
+            src={"https://www.youtube.com/embed/rARrK74vGfw?feature=share"}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
@@ -134,7 +134,7 @@ const UBeraniNanjak26 = () => {
             <div>
               <a href={playlist.id} target="_blank" rel="noopener noreferrer">
                 <img
-                  className="object-cover w-100 md:w-70 md:max-w-auto rounded-lg hover:scale-110"
+                  className="object-cover w-50 md:w-70 md:max-w-auto rounded-lg hover:scale-110 md: mt-5"
                   src={playlist.thumbnail}
                   alt={playlist.name}
                 />
@@ -165,6 +165,15 @@ const UBeraniNanjak26 = () => {
             />
           </div>
         </div>
+        <div className="grid justify-center">
+          <a
+            href="/ongoing-vote"
+            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-bold rounded-lg text-lg sm:text-xl md:text-2xl lg:text-3xl px-4 py-2 sm:px-5 sm:py-2.5"
+          >
+            Page Voting Disini
+          </a>
+        </div>
+
         {/* Schedule of events */}
         {/* <div className="grid justify-center">
           <BannerCarousel
