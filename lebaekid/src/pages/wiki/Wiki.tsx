@@ -148,7 +148,6 @@ const Wiki = () => {
           <h1 className="font-bold text-4xl my-5 py-5">
             Petarung Berani Nanjak
           </h1>
-          <p></p>
           {filteredParticipants.map((s) => (
             <div className="my-5">
               <hr className="w-[95%] py-5" />
@@ -209,8 +208,11 @@ const Wiki = () => {
                   <span className="font-semibold py-4">
                     Rekam Jejak Berani Nanjak:
                   </span>{" "}
+                  <br />
                   {s.HistoryBN}
                 </h1>
+                <br />
+
                 <h1>
                   <span className="font-semibold py-4">
                     Rekam Jejak Pertarungan:
