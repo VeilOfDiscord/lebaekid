@@ -21,26 +21,26 @@ const UBeraniNanjak26 = () => {
   const playlists = [
     {
       id: "https://www.youtube.com/playlist?list=PL05yvb5-0qTitbdtp9-5XLZphCETJCxhG",
-      thumbnail: "https://lebaek.id/images/video_page/thumbnail_BN26_H-1.jpeg",
+      thumbnail: "https://lebaek.id/images/video_page/thumbnail_BN26_H-2.jpeg",
       name: "Survey",
-      desc: "Survery",
+      desc: "Survey",
+    },
+    {
+      id: "https://www.youtube.com/watch?v=rARrK74vGfw",
+      thumbnail: "https://lebaek.id/images/video_page/thumbnail_BN26_H-1.jpeg",
+      name: "22nd January",
+      desc: "Racepack collection",
+    },
+    {
+      id: "https://www.youtube.com/watch?v=ERFKdvuoOIQ",
+      thumbnail:
+        "https://lebaek.id/images/video_page/thumbnail_BN26_H1.jpeg",
+      name: "H1",
+      desc: "H1",
     },
     // {
     //   id: "",
-    //   thumbnail: "https://lebaek.id/images/video_page/thumbnail_BN26_H2",
-    //   name: "Berani Nanjak",
-    //   desc: "Middle",
-    // },
-    // {
-    //   id: "",
-    //   thumbnail:
-    //     "https://lebaek.id/images/video_page/thumbnail_BN26_H3",
-    //   name: "Travelling Story",
-    //   desc: "Filler",
-    // },
-    // {
-    //   id: "",
-    //   thumbnail: "https://lebaek.id/images/video_page/thumbnail_BN26_H4"",
+    //   thumbnail: "https://lebaek.id/images/video_page/thumbnail_BN26_H2.jpeg"",
     //   name: "Trick Tips!",
     //   desc: "End",
     // },
@@ -119,19 +119,19 @@ const UBeraniNanjak26 = () => {
       {/* YouTube */}
       <div className="lg:grid grid-cols-1 xl:grid-cols-2 gap-10">
         {/* iframe */}
-        <div className="grid justify-center md:px-40 px-8 mx-100">
+        <div className="grid justify-center md:px-40 px-8 lg:mx-100">
           <iframe
             className="aspect-video lg:w-[960px] lg:h-[540px] md:w-[660px] md:h-[440px] w-screen h-fit rounded-lg p-6 justify-center"
-            src={"https://www.youtube.com/embed/i2mLcv6tmXQ"}
+            src={"https://www.youtube.com/embed/RNkkTu4PyTQ"}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
         </div>
         {/*playlist*/}
-        <div className="grid grid-cols-1 justify-self-center">
+        <div className="grid grid-cols-2 justify-self-center">
           {playlists.map((playlist) => (
-            <div>
+            <div className="p-3">
               <a href={playlist.id} target="_blank" rel="noopener noreferrer">
                 <img
                   className="object-cover w-100 md:w-70 md:max-w-auto rounded-lg hover:scale-110"
@@ -174,6 +174,16 @@ const UBeraniNanjak26 = () => {
             link={["#"]}
           />
         </div> */}
+        <div className="grid justify-center my-5">
+        <a
+            href="/events/u-berani-nanjak-26/ongoing-vote"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-bold rounded-lg text-lg sm:text-xl md:text-2xl lg:text-3xl px-4 py-2 sm:px-5 sm:py-2.5"
+          >
+            Vote disini!
+          </a>
+        </div>
         <div>{/* Gallery Pictures */}</div>
       </div>
       <h1 className="grid text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl pb-3 my-5 justify-center font-bold">
