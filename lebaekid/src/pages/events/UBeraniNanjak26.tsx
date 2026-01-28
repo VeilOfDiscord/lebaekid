@@ -21,30 +21,30 @@ const UBeraniNanjak26 = () => {
   const playlists = [
     {
       id: "https://www.youtube.com/playlist?list=PL05yvb5-0qTitbdtp9-5XLZphCETJCxhG",
-      thumbnail: "https://lebaek.id/images/video_page/thumbnail_BN26_H-1.jpeg",
+      thumbnail: "https://lebaek.id/images/video_page/thumbnail_BN26_H-2.jpeg",
       name: "Survey",
-      desc: "Survery",
+      desc: "Survey",
     },
-    // {
-    //   id: "",
-    //   thumbnail: "https://lebaek.id/images/video_page/thumbnail_BN26_H2",
-    //   name: "Berani Nanjak",
-    //   desc: "Middle",
-    // },
-    // {
-    //   id: "",
-    //   thumbnail:
-    //     "https://lebaek.id/images/video_page/thumbnail_BN26_H3",
-    //   name: "Travelling Story",
-    //   desc: "Filler",
-    // },
-    // {
-    //   id: "",
-    //   thumbnail: "https://lebaek.id/images/video_page/thumbnail_BN26_H4"",
-    //   name: "Trick Tips!",
-    //   desc: "End",
-    // },
+    {
+      id: "https://www.youtube.com/watch?v=rARrK74vGfw",
+      thumbnail: "https://lebaek.id/images/video_page/thumbnail_BN26_H-1.jpeg",
+      name: "22nd January",
+      desc: "Racepack collection",
+    },
+    {
+      id: "https://www.youtube.com/watch?v=ERFKdvuoOIQ",
+      thumbnail: "https://lebaek.id/images/video_page/thumbnail_BN26_H1.jpeg",
+      name: "H1",
+      desc: "H1",
+    },
+    {
+      id: "https://www.youtube.com/watch?v=rARrK74vGfw",
+      thumbnail: "https://lebaek.id/images/video_page/thumbnail_BN26_H2.jpeg",
+      name: "H2",
+      desc: "H2",
+    },
   ];
+
   const BannerTemp = generateLinks("voting/banner-", 2, 1, ".jpg");
   const BannerSponsor = generateLinks("voting/banner-", 7, 3, ".jpg");
 
@@ -67,6 +67,7 @@ const UBeraniNanjak26 = () => {
   ];
   const [sheetData5km, setSheetData5km] = useState<any[]>([]);
   const [sheetData3km, setSheetData3km] = useState<any[]>([]);
+  // const [sheetDataTime, setSheetDataTime] = useState<any[]>([]);
 
   useEffect(() => {
     const loadData = async () => {
@@ -84,24 +85,21 @@ const UBeraniNanjak26 = () => {
     loadData();
   }, []);
 
+  // useEffect(() => {
+  //   const loadData = async () => {
+  //     const result = await fetchRange("A3:E1000", "Waktu");
+  //     setSheetDataTime(result);
+  //   };
+  //   loadData();
+  // }, []);
+
+
   return (
     <>
       <Navbar />
       <h1 className="grid justify-center text-center md:text-6xl text-5xl p-6 font-bold">
         Berani Nanjak 2026
       </h1>
-      {/* Top banner */}
-      {/* <div className="flex lg:w-full justify-center">
-        <a
-          href="u-berani-nanjak-26/ongoing-vote"
-          className="grid justify-center"
-        >
-          <img
-            src="https://lebaek.id/images/gallery/voting/banner-2.jpg"
-            className="rounded-lg"
-          />
-        </a>
-      </div> */}
       <div className="grid justify-center">
         <BannerCarousel
           images={BannerLinks}
@@ -122,14 +120,14 @@ const UBeraniNanjak26 = () => {
         <div className="grid justify-center md:px-40 px-8 lg:mx-100">
           <iframe
             className="aspect-video lg:w-[960px] lg:h-[540px] md:w-[660px] md:h-[440px] w-screen h-fit rounded-lg p-6 justify-center"
-            src={"https://www.youtube.com/embed/rARrK74vGfw?feature=share"}
+            src={"https://www.youtube.com/embed/paaIJp4FfgE?feature=share"}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
         </div>
         {/*playlist*/}
-        <div className="grid grid-cols-1 justify-self-center">
+        <div className="grid grid-cols-2 justify-self-center gap-5">
           {playlists.map((playlist) => (
             <div>
               <a href={playlist.id} target="_blank" rel="noopener noreferrer">
@@ -174,15 +172,6 @@ const UBeraniNanjak26 = () => {
           </a>
         </div>
 
-        {/* Schedule of events */}
-        {/* <div className="grid justify-center">
-          <BannerCarousel
-            images={[Ame, Ame]}
-            autoslide={false}
-            autoslideInterval={10000}
-            link={["#"]}
-          />
-        </div> */}
         <div>{/* Gallery Pictures */}</div>
       </div>
       <h1 className="grid text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl pb-3 my-5 justify-center font-bold">
